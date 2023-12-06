@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const countdownElement = document.getElementById('countdown');
   const startCountdownButton = document.getElementById('startCountdownButton');
-  let count = 10;
+  let count = 20;
   
   startCountdownButton.addEventListener('click', function() {
     const countdownInterval = setInterval(function() {
