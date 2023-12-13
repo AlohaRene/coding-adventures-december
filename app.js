@@ -1,19 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const countdownElement = document.getElementById('countdown');
-  const startCountdownButton = document.getElementById('startCountdownButton');
-  let count = 20;
-  
-  startCountdownButton.addEventListener('click', function() {
-    const countdownInterval = setInterval(function() {
-      countdownElement.textContent = count;
-      
-      // Change button color every second
-      startCountdownButton.style.backgroundColor = getRandomColor();
+  const countdownElementOne = document.getElementById('countdownOne');
+  const startCountdownButtonOne = document.getElementById('startCountdownButtonOne');
+  let countOne = 20;
 
-      count--;
-      if (count < 0) {
-        clearInterval(countdownInterval);
-        countdownElement.textContent = 'Countdown Complete!';
+  startCountdownButtonOne.addEventListener('click', function() {
+    const countdownIntervalOne = setInterval(function() {
+      countdownElementOne.textContent = countOne;
+
+      // Change button color every second
+      startCountdownButtonOne.style.backgroundColor = getRandomColor();
+
+      countOne--;
+      if (countOne < 0) {
+        clearInterval(countdownIntervalOne);
+        countdownElementOne.textContent = 'Countdown Complete!';
+      }
+    }, 1000);
+  });
+
+  const countdownElementTwo = document.getElementById('countdownTwo');
+  const startCountdownButtonTwo = document.getElementById('startCountdownButtonTwo');
+  let countTwo = 20;
+
+  startCountdownButtonTwo.addEventListener('click', function() {
+    const countdownIntervalTwo = setInterval(function() {
+      countdownElementTwo.textContent = countTwo;
+
+      // Change button color every second
+      startCountdownButtonTwo.style.backgroundColor = getRandomColor();
+
+      countTwo--;
+      if (countTwo < 0) {
+        clearInterval(countdownIntervalTwo);
+        countdownElementTwo.textContent = 'Countdown Complete!';
       }
     }, 1000);
   });
