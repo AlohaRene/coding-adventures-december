@@ -7,3 +7,4 @@
 #### :D 
 Learning some more basics but I know typescript is where its at! 
 I am also using ai as a rubber duck :D
+ # :D Merry Christmas 
