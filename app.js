@@ -46,3 +46,18 @@ document.addEventListener('DOMContentLoaded', function() {
     return color;
   }
 });
+
+function countdown() {
+  const countdownDisplay = document.getElementById('countdownDisplay');
+  let count = 65; // ASCII code for 'A'
+
+  const countdownInterval = setInterval(function() {
+    countdownDisplay.textContent = String.fromCharCode(count);
+    count++;
+
+    if (count > 90) { // ASCII code for 'Z'
+      clearInterval(countdownInterval);
+      countdownDisplay.textContent = 'Countdown Complete!';
+    }
+  }, 1000);
+}
